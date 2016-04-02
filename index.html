@@ -95,21 +95,39 @@
 				<div class="col s12 m6 l6 center"> <a href="http://gpstrackerrls.com/mt/" class="btn-large orange waves-effect">PLATAFORMA B</a></div>
 			</div>
 			<br>
+<!--
 			<div class="row center hide-on-med-and-up">
-				<a href="http://gpstrackerrls.com/mt/" class="btn-large orange waves-effect">CONÓCE GPS TRACKER</a></div>
-
-			
+				<a href="http://gpstrackerrls.com/mt/" class="btn-large orange waves-effect">CONÓCE GPS TRACKER</a>
+			</div>
+-->
 		</div>
 	</main>
 	<footer class="page-footer indigo">
 		<div class="container center valing-wrapper">
-			<h5 class="valign">banner</h5>
+			<h5 class="valign" id="status"></h5>
 		</div>
 	</footer>
 	<!--  Scripts-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="./js/materialize.js"></script>
 	<script src="./js/init.js"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js', {
+				scope: './'
+			}).then(function (registration) {
+				document.querySelector('#status').textContent = 'succeeded';
+			}).catch(function (error) {
+				document.querySelector('#status').textContent = error;
+			});
+		} else {
+			// The current browser doesn't support service workers.
+			var aElement = document.createElement('a');
+			aElement.href = 'http://www.chromium.org/blink/serviceworker/service-worker-faq';
+			aElement.textContent = 'unavailable';
+			document.querySelector('#status').appendChild(aElement);
+		}
+	</script>
 </body>
 
 </html>
