@@ -1,4 +1,4 @@
-﻿cordova.define("com.peerio.cordova.plugin.splashscreen.SplashScreenProxy", function(require, exports, module) {
+cordova.define("com.peerio.cordova.plugin.splashscreen.SplashScreenProxy", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
