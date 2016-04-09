@@ -2,20 +2,7 @@
 
 <html>
     <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <allow-navigation href="https://app.gpstrackerls.com/*" />
-        <allow-navigation href="http://a.gpstrackerls.com/*" />
-        <allow-navigation href="http://b.gpstrackerls.com/*" />
-        <allow-navigation href="http://principal.gpstrackerls.com/*" />
-        <allow-navigation href="http://gpstrackerls.com/*" />
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://*.gpstrackerls.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
@@ -25,8 +12,6 @@
 		<title>GPS Tracker | Seleccionar plataforma movil para acceder.</title>
 		<meta name="description" content="Acceder a nuestras plataformas de monitoreo">
 		<meta name="robots" content="noindex" />
-		
-		<icon src="images/icon.png" />
 		
 		<!--	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
 		<link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen" />
@@ -54,26 +39,22 @@
 	<header>
 		<!-- Dropdown Structure -->
 		<ul id="dropdown1" class="dropdown-content black-text">
-			<li><a href="http://gpstrackerls.complataforma-a.html">Plataforma A</a></li>
-			<li><a href="http://gpstrackerls.complataforma-b.html">Plataforma B</a></li>
+			<li><a href="http://a.gpstrackerls.com/mt/">Portal A</a></li>
+			<li><a href="http://b.gpstrackerls.com/mt/">Portal B</a></li>
 		</ul>
 		<!-- NAV BAR-->
 		<nav class="white">
 			<div class="nav-wrapper " data-spy="affix" data-offset-top="100">
 				<a id="logo-container" href="http://gpstrackerls.comindex.html" class="brand-logo"><img height=59 src="./images/logo-grande.png" alt="GPS tracker Logo"></a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="http://gpstrackerls.comindex.html">Inicio</a></li>
-					<li><a href="http://gpstrackerls.comempresa.html">Empresa</a></li>
-					<li><a id="http://gpstrackerls.comcontact-btn" href="/contacto.html">Contáctanos</a></li>
+					<li><a href="/">Inicio</a></li>
 					<li><a id="http://gpstrackerls.complat-btn" class="dropdown-button" data-activates="dropdown1">Plataformas <img class="nav-icon" src="./images/arrow.png" alt="plataformas"></a></li>
 				</ul>
-
 				<ul id="nav-mobile" class="side-nav">
-					<li><a href="http://gpstrackerls.comindex.html">Inicio</a></li>
-					<li><a href="http://gpstrackerls.comempresa.html">Empresa</a></li>
-					<li><a href="http://gpstrackerls.comcontacto.html">Contáctanos</a></li>
-					<li><a href="http://gpstrackerls.complataforma-a.html">Plataforma A</a></li>
-					<li><a href="http://gpstrackerls.complataforma-b.html">Plataforma B</a></li>
+					<li><a href="/">Inicio</a></li>
+					<li><a href="http://a.gpstrackerls.com/mt/">Portal A</a></li>
+					<li><a href="http://b.gpstrackerls.com/mt/">Portal B</a></li>
+					<li><a href="app.gpstrackerls.com/acerca">Acerca de</a></li>
 				</ul>
 				<a data-activates="nav-mobile" class="button-collapse"><img id="menu-img" src="./images/menu.png" alt="menu"></a>
 			</div>
@@ -96,35 +77,11 @@
 -->
 		</div>
 	</main>
-	<footer class="page-footer indigo">
-		<div class="container center valing-wrapper">
-			<h5 class="valign" id="status"></h5>
-		</div>
-	</footer>
-	<!--  Scripts-->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="./js/materialize.js"></script>
-	<script src="./js/init.js"></script>
-	<script>
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('sw.js', {
-				scope: './'
-			}).then(function (registration) {
-				document.querySelector('#status').textContent = 'succeeded';
-			}).catch(function (error) {
-				document.querySelector('#status').textContent = error;
-			});
-		} else {
-			// The current browser doesn't support service workers.
-			var aElement = document.createElement('a');
-			aElement.href = 'http://www.chromium.org/blink/serviceworker/service-worker-faq';
-			aElement.textContent = 'unavailable';
-			document.querySelector('#status').appendChild(aElement);
-		}
-	</script>
-        
-        <script type="text/javascript" src="cordova.js"></script>
+		<!--  Scripts-->
         <script type="text/javascript" src="js/index.js"></script>
+		<script src="./js/jquery.js"></script>
+		<script src="./js/materialize.js"></script>
+		<script src="./js/init.js"></script>
     </body>
 </html>
 

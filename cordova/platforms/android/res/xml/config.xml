@@ -6,7 +6,7 @@
         <param name="onload" value="true" />
     </feature>
     <allow-intent href="market:*" />
-    <name>GPS-Tracker</name>
+    <name>GPS Tracker</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -21,4 +21,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <icon src="www/images/icon.png" />
 </widget>
