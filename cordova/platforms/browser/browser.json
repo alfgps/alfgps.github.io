@@ -1,0 +1,38 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.peerio.cordova.plugin.splashscreen": {
+            "PACKAGE_NAME": "com.gpstrackerls.gpstracker"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.gpstrackerls.gpstracker"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.peerio.cordova.plugin.splashscreen/www/splashscreen.js",
+            "id": "com.peerio.cordova.plugin.splashscreen.SplashScreen",
+            "pluginId": "com.peerio.cordova.plugin.splashscreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        },
+        {
+            "file": "plugins/com.peerio.cordova.plugin.splashscreen/src/browser/SplashScreenProxy.js",
+            "id": "com.peerio.cordova.plugin.splashscreen.SplashScreenProxy",
+            "pluginId": "com.peerio.cordova.plugin.splashscreen",
+            "runs": true
+        }
+    ],
+    "plugin_metadata": {
+        "com.peerio.cordova.plugin.splashscreen": "3.2.4",
+        "cordova-plugin-whitelist": "1.2.1"
+    }
+}

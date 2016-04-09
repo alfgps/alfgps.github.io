@@ -1,40 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <allow-navigation href="https://app.gpstrackerls.com/*" />
-        <allow-navigation href="http://a.gpstrackerls.com/*" />
-        <allow-navigation href="http://b.gpstrackerls.com/*" />
-        <allow-navigation href="http://principal.gpstrackerls.com/*" />
-        <allow-navigation href="http://gpstrackerls.com/*" />
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-		<title>GPS Tracker | Seleccionar plataforma movil para acceder.</title>
-		<meta name="description" content="Acceder a nuestras plataformas de monitoreo">
-		<meta name="robots" content="noindex" />
-		
-		<icon src="res/icon.png" />
-		
-		<!--	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-		<link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen" />
-		<link href="./css/style.css" type="text/css" rel="stylesheet" media="screen" />
-		<link href="./css/styles.css" type="text/css" rel="stylesheet" media="screen" />
-    </head>
-    <body>
-		<!--GOOGLE ANALYTICS-->
+
+<head>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<title>GPS Tracker | Seleccionar plataforma movil para acceder.</title>
+	<meta name="description" content="Acceder a nuestras plataformas de monitoreo">
+	<meta name="robots" content="noindex" />
+
+	<!--	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+	<link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="./css/style.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="./css/styles.css" type="text/css" rel="stylesheet" media="screen" />
+	<style>
+		#sidenav-overlay{
+			left: 240px;
+		}
+		#aux-btn{
+			position: fixed;
+			width: 43px;
+			height: 43px;
+			padding: 0px;
+			background-color: white;
+			margin-left:0px;
+
+		}
+		#aux-btn a{
+			margin-left:0px;
+		}
+	</style>
+</head>
+
+<body>
+	<!--GOOGLE ANALYTICS-->
 	<script>
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
@@ -52,79 +54,140 @@
 		ga('send', 'pageview');
 	</script>
 	<header>
+	<div id="aux-btn" class="hide"><a data-activates="nav-mobile" class="button-collapse" ><img class="responsive-img" src="./images/menu.png" alt=""></a></div>
 		<!-- Dropdown Structure -->
 		<ul id="dropdown1" class="dropdown-content black-text">
-			<li><a href="http://gpstrackerls.complataforma-a.html">Plataforma A</a></li>
-			<li><a href="http://gpstrackerls.complataforma-b.html">Plataforma B</a></li>
+			<li><a class="portala">Portal A</a></li>
+			<li><a class="portalb">Portal B</a></li>
 		</ul>
+		<ul id="nav-mobile" class="side-nav">
+					<li><a class="main">Inicio</a></li>
+					<li><a class="portala">Portal A</a></li>
+					<li><a class="portalb">Portal B</a></li>
+					<li><a class="acerca">Acerca de</a></li>
+				</ul>
 		<!-- NAV BAR-->
 		<nav class="white">
 			<div class="nav-wrapper " data-spy="affix" data-offset-top="100">
-				<a id="logo-container" href="http://gpstrackerls.comindex.html" class="brand-logo"><img height=59 src="./images/logo-grande.png" alt="GPS tracker Logo"></a>
+				<a id="logo-container" class="brand-logo main"><img height=59 src="./images/logo-grande.png" alt="GPS tracker Logo"></a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="http://gpstrackerls.comindex.html">Inicio</a></li>
-					<li><a href="http://gpstrackerls.comempresa.html">Empresa</a></li>
-					<li><a id="http://gpstrackerls.comcontact-btn" href="/contacto.html">Contáctanos</a></li>
-					<li><a id="http://gpstrackerls.complat-btn" class="dropdown-button" data-activates="dropdown1">Plataformas <img class="nav-icon" src="./images/arrow.png" alt="plataformas"></a></li>
+					<li><a class="main">Inicio</a></li>
+					<li><a class="acerca">Acerca de</a></li>
+					<li><a id="http://gpstrackerls.complat-btn" class="dropdown-button" data-activates="dropdown1">Portales <img class="nav-icon" src="./images/arrow.png" alt="plataformas"></a></li>
 				</ul>
-
-				<ul id="nav-mobile" class="side-nav">
-					<li><a href="http://gpstrackerls.comindex.html">Inicio</a></li>
-					<li><a href="http://gpstrackerls.comempresa.html">Empresa</a></li>
-					<li><a href="http://gpstrackerls.comcontacto.html">Contáctanos</a></li>
-					<li><a href="http://gpstrackerls.complataforma-a.html">Plataforma A</a></li>
-					<li><a href="http://gpstrackerls.complataforma-b.html">Plataforma B</a></li>
-				</ul>
+				
 				<a data-activates="nav-mobile" class="button-collapse"><img id="menu-img" src="./images/menu.png" alt="menu"></a>
 			</div>
 		</nav>
 
 	</header>
 	<main>
-		<div class="container center">
+		<div id="main" class="container center">
 			<h4 class="indigo-text">Seleccionar plataforma:</h4>
 			<br>
 			<div class="row">
-				<div class="col s12 m6 l6 center"> <a href="http://a.gpstrackerls.com/mt/" class="btn-large orange waves-effect">PLATAFORMA A</a></div>
-				<div class="col s12 m6 l6 center"> <a href="http://b.gpstrackerls.com/mt/" class="btn-large orange waves-effect">PLATAFORMA B</a></div>
+				<div class="col s12 m6 l6 center"> <a class="portala btn-large orange waves-effect">PLATAFORMA A</a></div>
+				<div class="col s12 m6 l6 center"> <a class="portalb btn-large orange waves-effect">PLATAFORMA B</a></div>
 			</div>
 			<br>
-<!--
-			<div class="row center hide-on-med-and-up">
-				<a href="http://gpstrackerrls.com/mt/" class="btn-large orange waves-effect">CONÓCE GPS TRACKER</a>
+		</div>
+		<div id="acerca" class="hide">
+			<div class="container">
+			<div class="row">
+				<h1>GPS Tracker Móvil</h1>
 			</div>
--->
+				<div class="row">
+					<div class="col center s12">
+						<img src="./android-chrome-256x256.png" class="responsive-img center" alt="GPS Tracker Logo">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 center">
+						<p class="flow-text " style="font-weight:100;">
+							GPS Tracker Móvil, es una app propiedad de la empresa Angulos Cia. ltda empresa dedicada a la comercialización de sistemas de rastreo satelital para vehículos, maquinarias y equipos de trabajo por mas de 12 años,
+							<p class="flow-text ">Desarrollador: <a href="https://fega.cienciambiente.com">Fabian E. Gutierrez.</a></p>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<h2>Licencias y agradecimientos</h2>
+				</div>
+				<div class="row">
+					<div class="col s12 center l4 m4">
+						<img src="" alt="materializeCSS logo">
+					</div>
+					<div class="col s12 l8 m8">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="portala" class="hide">
+			<iframe id="portalaiframe" src="http://a.gpstrackerls.com/mt" frameborder="0"></iframe>
+		</div>
+		<div id="portalb" class="hide">
+			<iframe id="portalbiframe" src="http://b.gpstrackerls.com/mt" frameborder="0"></iframe>
 		</div>
 	</main>
-	<footer class="page-footer indigo">
-		<div class="container center valing-wrapper">
-			<h5 class="valign" id="status"></h5>
-		</div>
-	</footer>
 	<!--  Scripts-->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="./js/jquery.js"></script>
 	<script src="./js/materialize.js"></script>
 	<script src="./js/init.js"></script>
 	<script>
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('sw.js', {
-				scope: './'
-			}).then(function (registration) {
-				document.querySelector('#status').textContent = 'succeeded';
-			}).catch(function (error) {
-				document.querySelector('#status').textContent = error;
+			$(".acerca").click(function () {
+				hidding();
+				$("#acerca").removeClass("hide");
+				$("nav").removeClass("hide");
 			});
-		} else {
-			// The current browser doesn't support service workers.
-			var aElement = document.createElement('a');
-			aElement.href = 'http://www.chromium.org/blink/serviceworker/service-worker-faq';
-			aElement.textContent = 'unavailable';
-			document.querySelector('#status').appendChild(aElement);
+			$(".main").click(function () {
+				hidding();
+				$("#main").removeClass("hide");
+				$("nav").removeClass("hide");
+			});
+
+			$(".portala").click(function () {
+				hidding();
+				$("#portala").removeClass("hide");
+				$("#aux-btn").removeClass("hide");
+				resizing();
+			});
+			$(".portalb").click(function () {
+				hidding();
+				$("#portalb").removeClass("hide");
+				$("#aux-btn").removeClass("hide");
+				resizing();
+			});
+
+		$(window).resize(function() {
+			resizing();
+		});
+
+		function resizing() {
+			document.getElementById("portalaiframe").style.width = window.innerWidth + "px";
+			document.getElementById("portalaiframe").style.height = window.innerHeight + "px";
+			document.getElementById("portalbiframe").style.width = window.innerWidth + "px";
+			document.getElementById("portalbiframe").style.height = window.innerHeight + "px";
+			document.getElementById("portala").style.width = window.innerWidth + "px";
+			document.getElementById("portala").style.height = window.innerHeight-20 + "px";
+			document.getElementById("portalb").style.width = window.innerWidth + "px";
+			document.getElementById("portalb").style.height = window.innerHeight-20 + "px";
+			
+		}
+		function hidding(){
+			$("nav").addClass("hide");
+			$("#main").addClass("hide");
+			$("#acerca").addClass("hide");
+			$("#portala").addClass("hide");
+			$("#portalb").addClass("hide");
+			$("nav").addClass("hide");
+			$("#aux-btn").addClass("hide");
+			$('.portalb').sideNav('hide');
+			$('.acerca').sideNav('hide');
+			$('.main').sideNav('hide');
+			$('.portalb').sideNav('hide');
 		}
 	</script>
-        
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
-</html>
+</body>
 
+</html>

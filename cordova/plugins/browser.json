@@ -1,0 +1,18 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.peerio.cordova.plugin.splashscreen": {
+            "PACKAGE_NAME": "com.gpstrackerls.gpstracker"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.gpstrackerls.gpstracker"
+        }
+    },
+    "dependent_plugins": {}
+}

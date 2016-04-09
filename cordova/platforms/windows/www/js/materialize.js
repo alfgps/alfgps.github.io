@@ -1,4 +1,4 @@
-if (typeof (jQuery) === 'undefined') {
+﻿if (typeof (jQuery) === 'undefined') {
 	var jQuery;
 	if (typeof (require) === 'function') {
 		jQuery = $ = require('jQuery');

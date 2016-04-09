@@ -2,10 +2,10 @@
 <widget id="com.gpstrackerls.gpstracker" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>GPS Tracker</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        GPS Tracker | Seleccionar plataforma movil para acceder.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="fega.hg@gmail.com" href="http://fega.cienciambiente.com">
+        Fabian G.
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
@@ -18,11 +18,34 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <preference name="windows-target-version" value="10.0" />
 	<allow-navigation href="*" />
 	<icon src="www/images/icon.png" />
+ 
+
+
+    <platform name="windows">
+        <!-- images are determined by width and height. The following are supported -->
+        <splash src="www/images/icon.png" width="620" height="300"/>
+        <splash src="www/images/icon.png" width="1152" height="1920"/>
+
+        <icon src="icons/windows/storelogo.png" target="StoreLogo" />
+        <icon src="icons/windows/Square30x30Logo.png" target="Square30x30Logo" />
+        <icon src="icons/Windows/Square44x44Logo.png" target="Square44x44Logo" />
+        <icon src="icons/Windows/Square70x70Logo.png" target="Square70x70Logo" />
+        <icon src="icons/Windows/Square71x71Logo.png" target="Square71x71Logo" />
+        <icon src="icons/Windows/Square150x150Logo.png" target="Square150x150Logo" />
+        <icon src="icons/Windows/Square310x310Logo.png" target="Square310x310Logo" />
+        <icon src="icons/Windows/Wide310x150Logo.png" target="Wide310x150Logo" />
+
+        <splash src="icons/windows/splashscreen.png" width="620" height="300"/>
+        <splash src="icons/windows/splashscreenphone.png" width="1152" height="1920"/>
+    </platform>
+    <preference name="SplashScreenDelay" value="10000" />
 </widget>

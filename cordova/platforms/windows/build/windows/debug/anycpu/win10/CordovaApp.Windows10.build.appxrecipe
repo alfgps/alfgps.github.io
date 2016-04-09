@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>FABIAN-LAPTOP</Machine>
+    <WindowsUser>Usuario</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>debug|anycpu</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>53db03d0-fe71-11e5-8060-573eefc0ca62</PackageIdentityName>
+    <IntermediateOutputPath>E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\build\windows\debug\anycpu\win10\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\Square30x30Logo.png">
+      <PackagePath>images\Square30x30Logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\StoreLogo.png">
+      <PackagePath>images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\android-chrome-256x256.png">
+      <PackagePath>www\android-chrome-256x256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\css\back.png">
+      <PackagePath>www\css\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\12-anios-de-experiencia.png">
+      <PackagePath>www\images\12-anios-de-experiencia.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\arrow.png">
+      <PackagePath>www\images\arrow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\background3.png">
+      <PackagePath>www\images\background3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\background4.png">
+      <PackagePath>www\images\background4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\background5.png">
+      <PackagePath>www\images\background5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\calidad.png">
+      <PackagePath>www\images\calidad.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\camino.png">
+      <PackagePath>www\images\camino.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\facebook-box.png">
+      <PackagePath>www\images\facebook-box.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\heroshot1.png">
+      <PackagePath>www\images\heroshot1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\icon.png">
+      <PackagePath>www\images\icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\Imagenes-portal.png">
+      <PackagePath>www\images\Imagenes-portal.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\linkedin-box.png">
+      <PackagePath>www\images\linkedin-box.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\logo gpstracker.png">
+      <PackagePath>www\images\logo gpstracker.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\logo-grande.png">
+      <PackagePath>www\images\logo-grande.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\logo-grande2.png">
+      <PackagePath>www\images\logo-grande2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\logo-mega.png">
+      <PackagePath>www\images\logo-mega.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\logo.png">
+      <PackagePath>www\images\logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\map.png">
+      <PackagePath>www\images\map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\mei-track.png">
+      <PackagePath>www\images\mei-track.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\menu.png">
+      <PackagePath>www\images\menu.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\precio.png">
+      <PackagePath>www\images\precio.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\seguridad.png">
+      <PackagePath>www\images\seguridad.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\skype.png">
+      <PackagePath>www\images\skype.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\twitter-box.png">
+      <PackagePath>www\images\twitter-box.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\js\index.js">
+      <PackagePath>www\js\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\js\init.js">
+      <PackagePath>www\js\init.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\js\jquery.js">
+      <PackagePath>www\js\jquery.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\js\materialize.js">
+      <PackagePath>www\js\materialize.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\js\materialize.min.js">
+      <PackagePath>www\js\materialize.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\plugins\com.peerio.cordova.plugin.splashscreen\www\splashscreen.js">
+      <PackagePath>www\plugins\com.peerio.cordova.plugin.splashscreen\www\splashscreen.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\plugins\com.peerio.cordova.plugin.splashscreen\www\windows\SplashScreenProxy.js">
+      <PackagePath>www\plugins\com.peerio.cordova.plugin.splashscreen\www\windows\SplashScreenProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\css\blog.css">
+      <PackagePath>www\css\blog.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\css\index.css">
+      <PackagePath>www\css\index.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\css\materialize.css">
+      <PackagePath>www\css\materialize.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\css\materialize.min.css">
+      <PackagePath>www\css\materialize.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\css\plataforma.css">
+      <PackagePath>www\css\plataforma.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\css\style.css">
+      <PackagePath>www\css\style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\css\styles.css">
+      <PackagePath>www\css\styles.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\background-mobile.jpg">
+      <PackagePath>www\images\background-mobile.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\background.jpg">
+      <PackagePath>www\images\background.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\background2.jpg">
+      <PackagePath>www\images\background2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\Foto fondo 1.jpg">
+      <PackagePath>www\images\Foto fondo 1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\Foto Fondo2.jpg">
+      <PackagePath>www\images\Foto Fondo2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\gpstracker-logo.jpg">
+      <PackagePath>www\images\gpstracker-logo.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\heroshot1.jpg">
+      <PackagePath>www\images\heroshot1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\heroshot2.jpg">
+      <PackagePath>www\images\heroshot2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\llamanos.jpg">
+      <PackagePath>www\images\llamanos.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\Meitrack-VT330 GPS.jpg">
+      <PackagePath>www\images\Meitrack-VT330 GPS.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\plan1.jpg">
+      <PackagePath>www\images\plan1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\plan2.jpg">
+      <PackagePath>www\images\plan2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\plan3.jpg">
+      <PackagePath>www\images\plan3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\tracker carga.jpg">
+      <PackagePath>www\images\tracker carga.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\tracker personal.jpg">
+      <PackagePath>www\images\tracker personal.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\tracker-auto.jpg">
+      <PackagePath>www\images\tracker-auto.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\tracker-maquinaria.jpg">
+      <PackagePath>www\images\tracker-maquinaria.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\favicon.ico">
+      <PackagePath>www\images\favicon.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\letrero.svg">
+      <PackagePath>www\images\letrero.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\images\mei-track.psd">
+      <PackagePath>www\images\mei-track.psd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\build\windows\debug\anycpu\win10\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -8,12 +8,33 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "GPS-Tracker"
+            "PACKAGE_NAME": "GPS Tracker"
+        },
+        "com.peerio.cordova.plugin.splashscreen": {
+            "PACKAGE_NAME": "GPS Tracker"
         }
     },
     "dependent_plugins": {},
-    "modules": [],
+    "modules": [
+        {
+            "file": "plugins/com.peerio.cordova.plugin.splashscreen/www/splashscreen.js",
+            "id": "com.peerio.cordova.plugin.splashscreen.SplashScreen",
+            "pluginId": "com.peerio.cordova.plugin.splashscreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        },
+        {
+            "file": "plugins/com.peerio.cordova.plugin.splashscreen/www/windows/SplashScreenProxy.js",
+            "id": "com.peerio.cordova.plugin.splashscreen.SplashScreenProxy",
+            "pluginId": "com.peerio.cordova.plugin.splashscreen",
+            "merges": [
+                ""
+            ]
+        }
+    ],
     "plugin_metadata": {
-        "cordova-plugin-whitelist": "1.2.1"
+        "cordova-plugin-whitelist": "1.2.1",
+        "com.peerio.cordova.plugin.splashscreen": "3.2.4"
     }
 }

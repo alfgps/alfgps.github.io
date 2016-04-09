@@ -1,11 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.gpstrackerls.gpstracker" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>GPS-Tracker</name>
+    <splash height="300" src="www/images/icon.png" width="620" />
+    <splash height="1920" src="www/images/icon.png" width="1152" />
+    <icon src="icons/windows/storelogo.png" target="StoreLogo" />
+    <icon src="icons/windows/Square30x30Logo.png" target="Square30x30Logo" />
+    <icon src="icons/Windows/Square44x44Logo.png" target="Square44x44Logo" />
+    <icon src="icons/Windows/Square70x70Logo.png" target="Square70x70Logo" />
+    <icon src="icons/Windows/Square71x71Logo.png" target="Square71x71Logo" />
+    <icon src="icons/Windows/Square150x150Logo.png" target="Square150x150Logo" />
+    <icon src="icons/Windows/Square310x310Logo.png" target="Square310x310Logo" />
+    <icon src="icons/Windows/Wide310x150Logo.png" target="Wide310x150Logo" />
+    <splash height="300" src="icons/windows/splashscreen.png" width="620" />
+    <splash height="1920" src="icons/windows/splashscreenphone.png" width="1152" />
+    <name>GPS Tracker</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        GPS Tracker | Seleccionar plataforma movil para acceder.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="fega.hg@gmail.com" href="http://fega.cienciambiente.com">
+        Fabian G.
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -15,4 +27,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <icon src="www/images/icon.png" />
+    <preference name="windows-target-version" value="10.0" />
+    <preference name="SplashScreenDelay" value="10000" />
 </widget>

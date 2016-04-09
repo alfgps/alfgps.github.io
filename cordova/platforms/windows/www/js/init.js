@@ -1,1 +1,6 @@
-(function($){$(function(){$('.button-collapse').sideNav();$('.parallax').parallax();});})(jQuery);
+﻿(function ($) {
+	$(function () {
+		$('.button-collapse').sideNav();
+		$('.parallax').parallax();
+	});
+})(jQuery);

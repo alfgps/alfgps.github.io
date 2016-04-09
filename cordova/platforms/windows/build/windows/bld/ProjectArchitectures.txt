@@ -1,0 +1,1 @@
+E:\Users\Usuario\Documents\GitHub\alfgps.github.io\cordova\platforms\windows\CordovaApp.Windows10.jsproj;neutral

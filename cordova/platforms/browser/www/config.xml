@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.gpstrackerls.gpstracker" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>GPS Tracker</name>
+    <description>
+        GPS Tracker | Seleccionar plataforma movil para acceder.
+    </description>
+    <author email="fega.hg@gmail.com" href="http://fega.cienciambiente.com">
+        Fabian G.
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <icon src="www/images/icon.png" />
+    <preference name="windows-target-version" value="10.0" />
+    <preference name="SplashScreenDelay" value="10000" />
+</widget>
