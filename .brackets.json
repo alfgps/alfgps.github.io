@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "E:/Users/Usuario/Documents/GitHub/alfgps.github.io/cordova/www/js/materialize.min.js",
+        "E:/Users/Usuario/Documents/GitHub/alfgps.github.io/sw.js",
+        "E:/Users/Usuario/Documents/GitHub/alfgps.github.io/cordova/www/js/materialize.js",
+        "E:/Users/Usuario/Documents/GitHub/alfgps.github.io/js/materialize.min.js"
+    ]
+}
