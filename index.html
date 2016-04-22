@@ -47,9 +47,6 @@
 	<!-- CSS  -->
 	<!--	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
 	<link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen" />
-	<link href="./css/style.css" type="text/css" rel="stylesheet" media="screen" />
-	<link href="./css/styles.css" type="text/css" rel="stylesheet" media="screen" />
-	<link href="./css/plataforma.css" type="text/css" rel="stylesheet" media="screen" />
 </head>
 
 <body>
@@ -123,8 +120,6 @@
 	</footer>
 	<!--  Scripts-->
 	<script src="./js/jquery.js"></script>
-	<script src="./js/materialize.js"></script>
-	<script src="./js/init.js"></script>
 	<script>
 		//service worker registration
 		if ('serviceWorker' in navigator) {
@@ -143,7 +138,7 @@
 			document.querySelector('#status').appendChild(aElement);
 		}
 		//conection links checks
-		$('#main_nav a').click(function (event) {
+		$('.plat-link').click(function (event) {
 			var href = this.href;
 			event.preventDefault();
 			if (navigator.onLine) {
