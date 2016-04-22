@@ -24,7 +24,7 @@
 // cache, then increment the CACHE_VERSION value. It will kick off the service worker update
 // flow and the old cache(s) will be purged as part of the activate event handler when the
 // updated service worker is activated.
-var CACHE_VERSION = 9;
+var CACHE_VERSION = 0.2;
 var CURRENT_CACHES = {
   'read-through': 'read-through-cache-v' + CACHE_VERSION
 };
@@ -84,10 +84,10 @@ self.addEventListener('fetch', function(event) {
         return fetch(event.request.clone()).then(function(response) {
           console.log('  Response for %s from network is: %O',
             event.request.url, response);
-
+			console.log('CACHEEEE:'+event.request.url);
           // Optional: add in extra conditions here, e.g. response.type == 'basic' to only cache
           // responses from the same domain. See https://fetch.spec.whatwg.org/#concept-response-type
-          if (response.status < 400) {
+          if (response.status < 400 && event.request.url!='http://127.0.0.1:59938/images/sw.js') {
             // This avoids caching responses that we know are errors (i.e. HTTP status code of 4xx or 5xx).
             // One limitation is that, for non-CORS requests, we get back a filtered opaque response
             // (https://fetch.spec.whatwg.org/#concept-filtered-response-opaque) which will always have a
