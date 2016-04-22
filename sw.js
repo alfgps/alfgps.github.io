@@ -39,15 +39,15 @@ self.addEventListener('install', function(event) {
   var now = Date.now();
 
   var urlsToPrefetch = [
-    './css.materialize.css',
-    './index.html',
-	'./js/jquery.js',
-	'./images/logo.svg',
-	'./images/logo.png',
-	'./images/logo-grande.png',
-	'./images/map.png',
-	'./images/arrow.png',
-	'./favicon.ico'
+    '/css.materialize.css',
+    '/index.html',
+	'/js/jquery.js',
+	'/images/logo.svg',
+	'/images/logo.png',
+	'/images/logo-grande.png',
+	'/images/map.png',
+	'/images/arrow.png',
+	'/favicon.ico'
   ];
 
   // All of these logging statements should be visible via the "Inspect" interface
