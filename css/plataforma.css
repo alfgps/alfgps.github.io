@@ -158,12 +158,6 @@ iframe.plataforma {
 		top: 4px;
     	position: relative;
 	}
-	.row .col.l6{
-		text-align: right;
-	}
-	.row .col.l6.push-m6{
-		text-align: left ;
-	}
 }
 @media only screen and (max-width:600px) {
 	.svg-portal{

@@ -7,7 +7,7 @@
 	<title>GPS Tracker | Seleccionar plataforma movil para acceder.</title>
 	<meta name="description" content="Acceder a nuestras plataformas de monitoreo">
 	<meta name="robots" content="noindex" />
-	
+
 	<!--web sharing-->
 	<link href="http://principal.gpstrackerls.com/images/img_src.png" rel="image_src" />
 	<!--TWITTER CARD-->
@@ -73,25 +73,27 @@
 	<header>
 		<!-- Dropdown Structure -->
 		<ul id="dropdown1" class="dropdown-content black-text">
-			<li><a href="http://a.gpstrackerls.com/mt/" class="portala">Portal A</a></li>
-			<li><a href="http://b.gpstrackerls.com/mt/" class="portalb">Portal B</a></li>
+			<li><a class="plat-link" href="http://a.gpstrackerls.com/mt/" class="portala">Portal A</a></li>
+			<li><a class="plat-link" href="http://b.gpstrackerls.com/mt/" class="portalb">Portal B</a></li>
 		</ul>
 		<ul id="nav-mobile" class="side-nav">
-					<li><a class="main">Inicio</a></li>
-					<li><a href="http://a.gpstrackerls.com/mt/" class="portala">Portal A</a></li>
-					<li><a href="http://b.gpstrackerls.com/mt/" class="portalb">Portal B</a></li>
-					<li><a class="acerca">Acerca de</a></li>
-				</ul>
+			<li><a class="main">Inicio</a></li>
+			<li><a class="plat-link" href="http://a.gpstrackerls.com/mt/" class="portala">Portal A</a></li>
+			<li><a class="plat-link" href="http://b.gpstrackerls.com/mt/" class="portalb">Portal B</a></li>
+			<li><a class="acerca">Acerca de</a></li>
+		</ul>
 		<!-- NAV BAR-->
 		<nav class="white">
 			<div class="nav-wrapper " data-spy="affix" data-offset-top="100">
-				<a id="logo-container" href="./index.html" class="brand-logo"><object  type="image/svg+xml" data="/images/logo.svg" height="50"><img height=59 src="images/logo-grande.png" alt="GPS tracker Logo" ></object></a>
+				<a id="logo-container" href="./index.html" class="brand-logo">
+					<object type="image/svg+xml" data="/images/logo.svg" height="50"><img height=59 src="images/logo-grande.png" alt="GPS tracker Logo"></object>
+				</a>
 				<ul class="right hide-on-med-and-down">
 					<li><a class="main">Inicio</a></li>
 					<li><a class="acerca">Acerca de</a></li>
 					<li><a id="plat-btn" class="dropdown-button" data-activates="dropdown1">Portales <img class="nav-icon" src="./images/arrow.png" alt="plataformas"></a></li>
 				</ul>
-				
+
 				<a data-activates="nav-mobile" class="button-collapse"><img id="menu-img" src="./images/menu.png" alt="menu"></a>
 			</div>
 		</nav>
@@ -103,11 +105,11 @@
 			<h1 class="indigo-text">Seleccione su plataforma</h1>
 			<br>
 			<div class="row">
-				<div class="col s12 m6 l6 center"> <a href="http://a.gpstrackerls.com/mt/" class="btn-large orange waves-effect">PLATAFORMA A</a></div>
-				<div class="col s12 m6 l6 center"> <a href="http://b.gpstrackerls.com/mt/" class="btn-large orange waves-effect">PLATAFORMA B</a></div>
+				<div class="col s12 m6 l6 center"> <a href="http://a.gpstrackerls.com/mt/" class=" plat-link btn-large orange waves-effect">PLATAFORMA A</a></div>
+				<div class="col s12 m6 l6 center"> <a href="http://b.gpstrackerls.com/mt/" class="plat-link btn-large orange waves-effect">PLATAFORMA B</a></div>
 			</div>
 			<br>
-<!--
+			<!--
 			<div class="row center hide-on-med-and-up">
 				<a href="http://principal.gpstrackerrls.com/mt/" class="btn-large orange waves-effect">CONÓCE GPS TRACKER</a>
 			</div>
@@ -120,10 +122,11 @@
 		</div>
 	</footer>
 	<!--  Scripts-->
-	<script   src="./js/jquery.js"></script>
+	<script src="./js/jquery.js"></script>
 	<script src="./js/materialize.js"></script>
 	<script src="./js/init.js"></script>
 	<script>
+		//service worker registration
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.register('sw.js', {
 				scope: './'
@@ -139,12 +142,16 @@
 			aElement.textContent = 'unavailable';
 			document.querySelector('#status').appendChild(aElement);
 		}
-	</script>
-	<script>
-		
-		$( document ).ready(function() {
-    console.log( "ready!" );
-});
+		//conection links checks
+		$('#main_nav a').click(function (event) {
+			var href = this.href;
+			event.preventDefault();
+			if (navigator.onLine) {
+				window.location = href;
+			}else{
+				Materialize.toast('Portal no disponible sin conexion',4000)
+			}
+		});
 	</script>
 </body>
 
