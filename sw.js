@@ -20,7 +20,7 @@ self.addEventListener('install', function(event) {
   var now = Date.now();
 
   var urlsToPrefetch = [
-    '/css.materialize.css',
+    '/css/materialize.css',
     '/index.html',
 	'/js/jquery.js',
 	'/images/logo.svg',
