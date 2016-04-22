@@ -1,9 +1,14 @@
-﻿{
+{
 	"lang": "es",
 	"name": "GPS Tracker",
 	"short_name": "GPStracker",
 	"description": "Portal móvil de GPS tracker, localizador satelital",
+	"version": "1",
+	"manifest_version": 2,
 	"icons": [
+		{"16": "android-chrome-36x36.png", 
+		"128": "android-chrome-144x144.png"
+		},
 		{
 			"src": "\/android-chrome-36x36.png",
 			"sizes": "36x36",
@@ -49,8 +54,13 @@
 		"name": "Fega",
 		"url": "http://fega.cienciambiente.com"
 	},
-	"start_url": "https://app.gpstrackerls.html",
+	"app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+	"start_url": "/index.html",
 	"display": "standalone",
 	"theme_color": "#000",
 	"background_color": "#000"
-}
+} 

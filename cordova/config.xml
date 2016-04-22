@@ -16,9 +16,21 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+     <feature name="NetworkStatus">
+         <param name="android-package" value="CDVConnection" />
+    </feature>
     <platform name="android">
         <allow-intent href="market:*" />
+        <splash src="icons/android/screen-hdpi-portrait.png" density="land-hdpi"/>
+        <splash src="icons/android/screen-ldpi-portrait.png" density="land-ldpi"/>
+        <splash src="icons/android/screen-mdpi-portrait.png" density="land-mdpi"/>
+        <splash src="icons/android/screen-xhdpi-portrait.png" density="land-xhdpi"/>
 
+        <splash src="icons/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+        <splash src="icons/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+        <splash src="icons/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+        <splash src="icons/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+        <preference name="SplashScreenDelay" value="2000" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -47,5 +59,5 @@
         <splash src="icons/windows/splashscreen.png" width="620" height="300"/>
         <splash src="icons/windows/splashscreenphone.png" width="1152" height="1920"/>
     </platform>
-    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="SplashScreenDelay" value="1000" />
 </widget>

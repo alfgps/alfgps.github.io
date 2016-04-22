@@ -7,10 +7,13 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.peerio.cordova.plugin.splashscreen": {
+            "PACKAGE_NAME": "com.gpstrackerls.gpstracker"
+        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.gpstrackerls.gpstracker"
         },
-        "com.peerio.cordova.plugin.splashscreen": {
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.gpstrackerls.gpstracker"
         }
     },

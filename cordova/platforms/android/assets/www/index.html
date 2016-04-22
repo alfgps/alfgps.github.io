@@ -83,11 +83,11 @@
 	</header>
 	<main>
 		<div id="main" class="container center">
-			<h4 class="indigo-text">Seleccionar plataforma:</h4>
+			<h4 class="indigo-text">Seleccionar Portal:</h4>
 			<br>
 			<div class="row">
-				<div class="col s12 m6 l6 center"> <a class="portala btn-large orange waves-effect">PLATAFORMA A</a></div>
-				<div class="col s12 m6 l6 center"> <a class="portalb btn-large orange waves-effect">PLATAFORMA B</a></div>
+				<div class="col s12 m6 l6 center"> <a class="portala btn-large orange waves-effect">Portal A</a></div>
+				<div class="col s12 m6 l6 center"> <a class="portalb btn-large orange waves-effect">Portal B</a></div>
 			</div>
 			<br>
 		</div>
@@ -128,6 +128,10 @@
 		<div id="portalb" class="hide">
 			<iframe id="portalbiframe" src="http://b.gpstrackerls.com/mt" frameborder="0"></iframe>
 		</div>
+		<div id="offline" class="container hide center">
+			<h1 class="center">Parece que no tienes conexión</h1>
+		</div>
+
 	</main>
 	<!--  Scripts-->
 	<script type="text/javascript" src="js/index.js"></script>
@@ -135,6 +139,8 @@
 	<script src="./js/materialize.js"></script>
 	<script src="./js/init.js"></script>
 	<script>
+	var isOnline=true;
+
 			$(".acerca").click(function () {
 				hidding();
 				$("#acerca").removeClass("hide");
@@ -147,22 +153,31 @@
 			});
 
 			$(".portala").click(function () {
-				hidding();
-				$("#portala").removeClass("hide");
-				$("#aux-btn").removeClass("hide");
-				resizing();
-			});
+					hidding();
+					if (isOnline){
+						$("#portala").removeClass("hide");
+					}else{
+						$("#offline").removeClass("hide");
+					}
+					$("#aux-btn").removeClass("hide");
+					resizing();
+				}
+			);
 			$(".portalb").click(function () {
-				hidding();
-				$("#portalb").removeClass("hide");
-				$("#aux-btn").removeClass("hide");
-				resizing();
+					hidding();
+					if (!isOnline){
+						$("#portalb").removeClass("hide");
+					}else{
+						$("#offline").removeClass("hide");
+					}
+					$("#aux-btn").removeClass("hide");
+					resizing();
+						
 			});
 
 		$(window).resize(function() {
 			resizing();
 		});
-
 		function resizing() {
 			document.getElementById("portalaiframe").style.width = window.innerWidth + "px";
 			document.getElementById("portalaiframe").style.height = window.innerHeight + "px";
@@ -180,12 +195,26 @@
 			$("#acerca").addClass("hide");
 			$("#portala").addClass("hide");
 			$("#portalb").addClass("hide");
-			$("nav").addClass("hide");
+			$("#portalb").addClass("hide");
+			$("offline").addClass("hide");
 			$("#aux-btn").addClass("hide");
 			$('.portalb').sideNav('hide');
 			$('.acerca').sideNav('hide');
 			$('.main').sideNav('hide');
 			$('.portalb').sideNav('hide');
+		}
+		document.addEventListener("deviceready", onDeviceReady, false);
+		function onDeviceReady() {
+			// Now safe to use device APIs
+  			document.addEventListener("online", onOnline, false);
+ 			document.addEventListener("offline", onOffline, false);
+		}
+		function onOnline(){
+			isOnline=true;
+		}
+
+		function onOffline(){
+			isOnline=false;
 		}
 	</script>
 </body>

@@ -1,17 +1,32 @@
 html {
-	font-family: 'Trebuchet MS';
+	font-family: "Eras ITC",'Trebuchet MS';
+	font-weight: 500;
+}
+nav .button-collapse img{
+	width: 24px;
+	padding: 16px;
+	box-sizing: content-box;
+}
+@media only screen and (min-width:601px) {
+	nav .button-collapse img{
+	width: 24px;
+	padding: 16px;
+	padding-top: 22px;
+	box-sizing: content-box;
+}
 }
 
-nav ul a,
-nav .brand-logo {
+nav ul a{
 	color: #444;
 	font-size: 1.18em;
 }
-
-p {
-	line-height: 2rem;
+nav ul a:hover {
+    background-color: #ddd;
 }
-
+p {
+	line-height: 2.2rem;
+	font-weight: 400;
+}
 .button-collapse {
 	color: #26a69a;
 	margin-left: 10px;
@@ -138,8 +153,9 @@ valign {
 	z-index: 1003;
 }
 
-.brand-logo>img {
-	height: 53px;
+.brand-logo img,.brand-logo object {
+	height: 50px;
+	padding-left: 8px;
 }
 
 @media only screen and (min-width:601px) {
@@ -153,8 +169,9 @@ valign {
 		width: auto;
 		transition: all 0.2s;
 	}
-	.brand-logo>img {
-		height: 63px;
+	.brand-logo img,.brand-logo object {
+		height: 57px;
+		z-index: 100;
 	}
 	.affix,
 	.pinned {
@@ -188,12 +205,13 @@ valign {
 	top: 3px;
 }
 
-#menu-img {
-	margin-top: 6px;
-}
-
 .nav-icon {
 	margin-bottom: -6px;
+	
+}
+.dropdown-content .nav-icon{
+	left: -20px;
+    position: relative;
 }
 
 .btn-large.orange:not(.btn-floating) {
@@ -334,10 +352,14 @@ h1.impacto {
 		top: 100px;
 	}
 }
-
+#mobile-ad img,#mobile-ad{
+	margin-bottom: 00px;
+	overflow: hidden;
+}
 #cap4 {
-	margin-top: -200px;
-	margin-bottom: 50px;
+	margin-top: -300px;
+	margin-bottom: 100px;
+	overflow: hidden;
 }
 
 #cap4 h1.impacto {
@@ -346,33 +368,33 @@ h1.impacto {
 }
 
 #cap4 h2.impacto {
-	font-size: 1.0em;
+	font-size: 1.2em;
 	text-shadow: 0 1px 2px #000;
 }
 
 #cap4 .imp-1 {
 	margin-bottom: -25px;
 	left: -45px;
-	text-shadow: 0 1px 2px #000;
+	text-shadow: 0 1px 3px #000;
 }
 
 #cap4 .imp-3 {
 	margin-top: -25px;
 	left: 55px;
-	text-shadow: 0 1px 2px #000;
+	text-shadow: 0 1px 3px #000;
 }
 
 @media only screen and (max-width:350px) {
 	#cap4 {
-		margin-top: -150px;
+		margin-top: -27	0px;
 		margin-bottom: 0px;
 	}
-	cap4 h1.impacto {
+	#cap4 h1.impacto {
 		font-size: 1.72.3em;
 		text-shadow: 0 1px 2px #000;
 	}
 	#cap4 h2.impacto {
-		font-size: 0.8em;
+		font-size: 1.1em;
 		text-shadow: 0 1px 2px #000;
 	}
 	#cap4 .imp-1 {
@@ -394,3 +416,7 @@ h1.impacto {
 #cap2 .imp-3 {
 	left: 185px;
 }
+#sidenav-overlay{
+	z-index: 0;
+}
+

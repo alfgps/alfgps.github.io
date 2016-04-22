@@ -1,15 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.gpstrackerls.gpstracker" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
-    </feature>
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
     <allow-intent href="market:*" />
+    <splash density="land-hdpi" src="icons/android/screen-hdpi-portrait.png" />
+    <splash density="land-ldpi" src="icons/android/screen-ldpi-portrait.png" />
+    <splash density="land-mdpi" src="icons/android/screen-mdpi-portrait.png" />
+    <splash density="land-xhdpi" src="icons/android/screen-xhdpi-portrait.png" />
+    <splash density="port-hdpi" src="icons/android/screen-hdpi-portrait.png" />
+    <splash density="port-ldpi" src="icons/android/screen-ldpi-portrait.png" />
+    <splash density="port-mdpi" src="icons/android/screen-mdpi-portrait.png" />
+    <splash density="port-xhdpi" src="icons/android/screen-xhdpi-portrait.png" />
+    <preference name="SplashScreenDelay" value="2000" />
     <name>GPS Tracker</name>
     <description>
         GPS Tracker | Seleccionar plataforma movil para acceder.
@@ -28,5 +40,5 @@
     <preference name="windows-target-version" value="10.0" />
     <allow-navigation href="*" />
     <icon src="www/images/icon.png" />
-    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="SplashScreenDelay" value="1000" />
 </widget>

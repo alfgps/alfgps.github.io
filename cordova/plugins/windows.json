@@ -12,6 +12,9 @@
         },
         "com.peerio.cordova.plugin.splashscreen": {
             "PACKAGE_NAME": "GPS Tracker"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "GPS Tracker"
         }
     },
     "dependent_plugins": {}
