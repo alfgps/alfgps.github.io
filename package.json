@@ -1,0 +1,27 @@
+{
+  "name": "gps-tracker.github.io",
+  "version": "1.0.0",
+  "description": "Pagina Web de GPS Tracker",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfgps/alfgps.github.io.git"
+  },
+  "author": "Fabian E. Gutierrez <fega.hg@gmail.com> (https://fega.cienciambiente.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gps-tracker/gps-tracker.github.io/issues"
+  },
+  "homepage": "https://github.com/gps-tracker/gps-tracker.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-hb": "^5.1.0",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-webserver": "^0.9.1",
+    "i": "^0.3.4",
+    "npm": "^3.8.7"
+  }
+}

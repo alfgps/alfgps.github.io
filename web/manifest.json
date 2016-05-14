@@ -3,7 +3,7 @@
 	"name": "GPS Tracker",
 	"short_name": "GPStracker",
 	"description": "Portal móvil de GPS tracker, localizador satelital",
-	"version": 3,
+	"version": 2,
 	"manifest_version": 2,
 	"icons": [{
 		"16": "android-chrome-36x36.png",
